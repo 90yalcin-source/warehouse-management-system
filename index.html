@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Management System</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<link rel="icon" href="data:,">
+<body>
+    <div class="container">
+        <header>
+            <h1>📦 Warehouse Management System</h1>
+            <button id="exitBtn" onclick="exitSystem()">🔴 Exit System</button>
+        </header>
+
+        <div class="grid-container">
+            <div class="card">
+                <h3>📥 Receive Stock</h3>
+                <input type="text" id="recCategory" placeholder="Category (e.g., Tech)">
+                <input type="text" id="recProduct" placeholder="Product Name (e.g., Laptop)">
+                <input type="number" id="recQty" placeholder="Quantity" min="1">
+                <button class="btn-success" onclick="receiveStock()">Add Stock</button>
+            </div>
+
+            <div class="card">
+                <h3>💰 Sell Product</h3>
+                <input type="text" id="sellProduct" placeholder="Product Name">
+                <input type="number" id="sellQty" placeholder="Quantity" min="1">
+                <button class="btn-primary" onclick="sellProduct()">Complete Sale</button>
+            </div>
+
+            <div class="card">
+                <h3>🔄 Return Product</h3>
+                <input type="text" id="retProduct" placeholder="Product Name">
+                <input type="number" id="retQty" placeholder="Quantity" min="1">
+                <button class="btn-warning" onclick="returnProduct()">Process Return</button>
+            </div>
+        </div>
+
+        
+    </div>
+     <script src="app.js"></script> 
+</body>
+</html>
